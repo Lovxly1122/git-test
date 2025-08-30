@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #b4cad3;
+            text-transform: capitalize;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            border: 1px solid transparent;
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        #nav-img {
+            width: 90%;
+            padding-left: 40px;
+
+        }
+
+        #h1-nav {
+            padding-top: 40px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        li {
+            /* padding: 10px; */
+            padding: 25px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            /* font-weight: bold; */
+            padding: 25px;
+        }
+
+        li a:hover {
+            background-color: black;
+            color: snow;
+            transition: 0.3s;
+            transform: scale(1.1);
+            border-radius: 10px;
+        }
+
+        .hero-1 {
+            padding: 100px;
+        }
+
+        #img-hero {
+            width: 100%;
+            height: 350px;
+            padding: 20px;
+            border-radius: 5%;
+        }
+
+        #img-3 {
+            width: 100%;
+            height: 400px;
+        }
+
+        #span-1 {
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+
+        #span-2 {
+            text-decoration: underline;
+        }
+
+        p {
+            line-height: 25px;
+        }
+
+        .f-div>h1,
+        p {
+            padding: 20px;
+        }
+
+        #btn-1 {
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            background-color: black;
+            color: snow;
+            margin-left: 100px;
+        }
+
+        #btn-1:hover {
+            background-color: snow;
+            color: black;
+            transform: scale(1.1);
+            transition: 0.4s;
+            border: 2px solid black;
+        }
+
+        img {
+            border-radius: 20px;
+        }
+
+        span:hover {
+            transition: 0.3s;
+            transform: scale(1.1);
+            background-color: snow;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <!-- f-div -->
+    <div class="f-div row">
+        <header>
+            <nav>
+                <div class="col-1"><img src="mountains.png" id="nav-img"></div>
+                <div class="col-1">
+                    <h1 id="h1-nav">menu</h1>
+                </div>
+                <div class="col-8">
+                    <ul>
+                        <li><a href="#">individuals</a></li>
+                        <li><a href="#">business</a></li>
+                        <li><a href="#">public-sector</a></li>
+                        <li><a href="#">courses</a></li>
+                        <li><a href="#">resources</a></li>
+                    </ul>
+                </div>
+                <div class="col-1"><img src="inbox.png" id="nav-img"></div>
+                <div class="col-1">
+                    <h1 id="h1-nav">here me</h1>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!-- f-div -->
+
+    <!-- s-div -->
+    <div class="s-div row">
+        <div class="col-1">
+            <!-- empty -->
+        </div>
+        <div class=" hero-1 col-5">
+            <h1>hy, my <br>name is <span id="span-1">robo.</span></h1><br>
+            <p>Lorem ipsum dolor sit amet, Lorem, ipsum dolor.<br> Lorem, ipsum dolor Lorem..</p>
+        </div>
+        <div class="col-5">
+            <img src="men-pencil.png" id="img-hero">
+        </div>
+        <div class="col-1"></div>
+    </div>
+    <!-- s-div -->
+
+    <!-- t-div -->
+    <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col-1">
+            <p style="text-align: center;"> SCROLL</p>
+            <img src="downarrow.png" id="img-3">
+        </div>
+        <div class="col-9"></div>
+    </div>
+    <!-- t-div -->
+    <br><br><br>
+    <!-- f-div -->
+    <div class="f-div row">
+        <div class="col-1"></div>
+        <div class="col-4">
+            <h1>
+                <span id="span-2">let's</span> work together.
+            </h1><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nihil incidunt vel doloribus, quaerat
+                animi repellat repellendus dolor? Consequatur quidem cupiditate, labore quia tempora debitis incidunt
+                fugiat aliquid, cum magni voluptatem. Alias sapiente provident delectus vero adipisci eius. Quam, eaque
+                autem? Sunt cum <span id="span-2">aliquid adipisci!</span></p><br>
+                <button id="btn-1">get more info</button>
+        </div>
+        <div class="col-7"></div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <!-- f-div -->
+    <div class="r-div row">
+        <div class="col-1"></div>
+        <div class="col-4">
+            <h1>
+                <span id="span-2">open</span> source
+            </h1><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nihil incidunt vel doloribus, quaerat
+                animi repellat repellendus dolor? Consequatur quidem cupiditate, labore quia tempora debitis incidunt
+                <span id="span-2">aliquid adipisci!</span></p>
+        </div>
+        <div class="col-7"></div>
+    </div>
+    <!-- five-div -->
+    <div class="five-div row">
+        <div class="col-1"></div>
+        <div class="col-4">
+            <button id="btn-1">for my approach</button>
+        </div>
+        <div class="col-7"></div>
+    </div>
+    <!-- five-div -->
+    <br><br><br><br><br><br><br><br>
+    <!-- s-div -->
+    <div class="row">
+        <div class="col-1">
+            <!-- empty -->
+        </div>
+        <div class="col-4">
+            <img src="1.png" id="nav-img">
+        </div>
+        <div class="col-6">
+            <h2> Lorem, ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem earum dolor tempora deleniti blanditiis
+                impedit sapiente rerum cumque sunt deserunt.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas sunt natus ipsum quia, quos id temporibus
+                veniam possimus et a culpa fuga? Praesentium, aut velit?</p>
+
+            <p>Lorem ipsum dolor , adipisicing elit.ipsum dolor sit amet consectetur adipisicing
+                deserunt.</p><br>
+            <button id="btn-1">get more info</button>
+
+
+        </div>
+        <div class="col-1">
+            <!-- empty -->
+        </div>
+    </div>
+    <!-- s-div -->
+    <br><br>
+    <!-- seven-div -->
+
+    <div class="seven-div row">
+        <div class="col-1">
+            <!-- empty -->
+        </div>
+        <div class="col-4">
+            <img src="2.png" id="nav-img">
+        </div>
+        <div class="col-6">
+            <h2> Lorem, ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem earum dolor tempora deleniti blanditiis
+                impedit sapiente rerum cumque sunt deserunt.</p>
+
+            <p>Lorem, ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit.ipsum consectetur adipisicingdolor
+                sit amet consectetur adipisicing elit. Quas sunt natus ipsum quia, quos id temporibus
+                adipisicing elit.ipsum consectetur adipisicingdolor sit amet consectetur adipisicing elit. Quas sunt
+                natus ipsum quia, quos id temporibus
+                veniam possimus et a , aut velit?</p>
+
+
+            <button id="btn-1">get more info</button>
+
+
+        </div>
+        <div class="col-1">
+            <!-- empty -->
+        </div>
+    </div>
+    <!-- seven-div -->
+
+    <br><br>
+    <!-- e-div -->
+
+    <div class="e-div row">
+        <div class="col-1">
+            <!-- empty -->
+        </div>
+        <div class="col-4">
+            <img src="3.png" id="nav-img">
+        </div>
+        <div class="col-6">
+            <h2> Lorem, ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem earum dolor tempora deleniti blanditiis
+                impedit sapiente rerum cumque sunt deserunt.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas sunt natus ipsum quia, quos id temporibus
+                veniam possimus et a culpa fuga? Praesentium, aut velit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.ipsum dolor consectetur adipisicing.</p>
+            <button id="btn-1">get more info</button>
+
+
+        </div>
+        <div class="col-1">
+            <!-- empty -->
+        </div>
+    </div>
+    <!-- e-div -->
+    <br><br><br><br><br><br><br><br>
+</body>
+
+</html>
